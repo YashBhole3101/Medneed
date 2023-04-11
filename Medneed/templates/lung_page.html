@@ -1,0 +1,108 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<div class="row"  style="margin-bottom: 175px;">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <center><h1>Lung Disease Predictor</h1></center>
+        <div class="card card-body" style="border: 1px solid black;">
+            <form class="form-horizontal" action="{{ url_for('predictPage') }}" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="GENDER" placeholder="GENDER(Male:1 Female:0)">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="AGE" placeholder="AGE">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="SMOKING" placeholder="SMOKING(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="YELLOW_FINGERS" placeholder="YELLOW_FINGERS(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="ANXIETY" placeholder="ANXIETY(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="PEER_PRESSURE" placeholder="PEER_PRESSURE(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="CHRONIC DISEASE" placeholder="CHRONIC DISEASE(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="FATIGUE" placeholder="FATIGUE(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="ALLERGY" placeholder="ALLERGY(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="WHEEZING" placeholder="WHEEZING(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="ALCOHOL CONSUMING" placeholder="ALCOHOL CONSUMING(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="COUGHING" placeholder="COUGHING(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="SHORTNESS OF BREATH" placeholder="SHORTNESS OF BREATH(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="SWALLOWING DIFFICULTY" placeholder="SWALLOWING DIFFICULTY(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input style="border: 1px solid black;" class="form-control" type="text" name="CHEST PAIN" placeholder="CHEST PAIN(YES=2 , NO=1)">
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-info btn-block" value="Predict">
+            </form>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+{% endblock %}

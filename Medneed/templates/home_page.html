@@ -1,0 +1,82 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+        <div class="alert alert-danger">{{ message }}</div>
+    {% endif %}
+<div class="container">
+    <div class="card card-body" style="border: 1px solid black; box-shadow: 0 0 10px black;">
+        <h2>This is a basic Machine Learning based WebApp.</h2>
+        <br>
+        <h2>Model Accuracies:</h2>
+        <ul>
+            <li>Heart Disease Model: <strong>82.43%</strong></li>
+            <li>Liver Disease Model: <strong>76.06%</strong></li>
+            <li>Lung Disease Model: <strong>96.77%</strong></li>
+            <li>Diabetes Model: <strong>81.23%</strong></li>
+        </ul>
+        <br>
+        <h3>Information about the Diseases which this WebApp can predict.</h3>
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px;">
+                <h4>Diabetes</h4>
+                <p>Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy. Sometimes your body doesn’t make enough—or any—insulin or doesn’t use insulin well. Glucose then stays in your blood and doesn’t reach your cells.</p>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Urinating often.</li>
+                    <li>Feeling very thirsty.</li>
+                    <li>Extreme fatigue.</li>
+                    <li>Blurry vision.</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px;">
+                <h4>Lung</h4>
+                <p>Lung cancer is a type of cancer that begins in the lungs. Your lungs are two spongy organs in your chest that take in oxygen when you inhale and release carbon dioxide when you exhale.Lung cancer typically doesn't cause signs and symptoms in its earliest stages. Signs and symptoms of lung cancer typically occur when the disease is advanced.</p>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Shortness of breath</li>
+                    <li>Coughing up blood, even a small amount</li>
+                    <li>Chest pain</li>
+                    <li>A new cough that doesn't go away</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px;">
+                <h4>Heart</h4>
+                <p>Heart disease describes a range of conditions that affect your heart. Heart diseases include’ s
+                    (blood vessel disease, heart rhythm problems, heart valve disease etc).</p>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Pain, numbness, weakness or coldness in your legs or arms.</li>
+                    <li>Shortness of breath</li>
+                    <li>Dizzines.</li>
+                    <li>Chest Pain and Discomfort.</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px;">
+                <h4>Liver disease</h4>
+                <p>Liver disease can be inherited (genetic). Liver problems can also be caused by a variety of factors that damage the liver, such as viruses, alcohol use and obesity.</p>
+                <h5>Symptoms</h5>
+                <ul>
+                    <li>Swelling of the abdomen and legs.</li>
+                    <li>Bruising easily</li>
+                    <li>Changes in the color of your stool and urine, and jaundice.</li>
+                    <li>Yellowing of the skin and eyes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+
+    </div>
+</div>
+{% endblock %}
